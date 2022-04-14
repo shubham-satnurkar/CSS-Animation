@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/harish-sir.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/swapnil.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/yash.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/me.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/teju.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/priyanka.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/saurabh.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/akhil.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/bison.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/hero.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/bhai.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/cave.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/dhupgarh.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/boxing.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/baba.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/apan.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/hanuman.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/sir.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/swapnil-sir.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/hotel.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/rich.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/tin-takle.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/mahadev.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/jata.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/j1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/fall.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/action.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas</title>
+	</head>
+	<body>
+		<canvas id="mycanvas" width="1000px" height="400px" style="border: 1px solid black;"></canvas>
+
+
+		<script type="text/javascript">
+			var shape = document.getElementById('mycanvas');
+			var ctx = shape.getContext('2d');
+
+			ctx.moveTo(0, 0);
+			ctx.lineTo(1000, 400);
+			ctx.stroke();
+			ctx.fillStyle = 'green';
+			ctx.fillRect(10, 10, 100, 100);	
+		</script>
+	</body>
+</html>
